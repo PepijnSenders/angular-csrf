@@ -4,6 +4,6 @@ var gulp = require('gulp'),
 gulp.task('bundle', function() {
   return gulp
     .src('src/**/*.js')
-    .pipe(concat('angular-eventwatcher.js'))
+    .pipe(concat('angular-csrf.js'))
     .pipe(gulp.dest('dist'));
 });
