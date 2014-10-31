@@ -1,0 +1,1 @@
+var csrfApp = angular.module('csrfApp', []);
