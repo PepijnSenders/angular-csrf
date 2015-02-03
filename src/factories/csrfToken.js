@@ -1,13 +1,5 @@
-csrfApp.factory('csrfToken', function() {
+csrfApp.factory('csrfToken', function(TOKEN) {
 
-  var getCsrfToken = function() {
-    var metaTags = document.getElementsByTagName('meta');
-
-    for (var i = 0; i < metaTags.length; i++) {
-      if (metaTags[i].getAttribute('name') === 'csrf') {
-        return metaTags[i].getAttribute('content');
-      }
-    }
-  };
+  return TOKEN;
 
 });
